@@ -10,7 +10,7 @@ export default function Register() {
         e.preventDefault()
         const newPatient={name,email,password,disease,mobile}
         console.log(newPatient)
-        axios.post("http://localhost:4000/api/patients/addpatient",newPatient)
+        axios.post("http://https://hospital-applications-9rr4.onrender.com/api/patients/addpatient",newPatient)
             .then((res)=>{
                 if(res.status===201)
                     alert("Patient Created successfully")
